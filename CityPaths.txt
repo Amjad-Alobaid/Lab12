@@ -1,0 +1,35 @@
+101 ?- consult(['c:/Users/tilza/OneDrive/Documents/Prolog/CityPaths.pl']).
+true.
+
+102 ?- travel('Dammam', 'Madinah', P).
+P = ['Dammam', 'Qatif', 'Madinah'] ;
+false.
+
+103 ?- travel('Riyadh', 'Makkah', P).
+P = ['Riyadh', 'Dammam', 'Qatif', 'Madinah', 'Makkah'] ;
+false.
+
+104 ?- travel('Makkah', 'Riyadh', P).
+P = ['Makkah', 'Madinah', 'Taif', 'Dammam', 'Riyadh'] ;
+P = ['Makkah', 'Madinah', 'Tabuk', 'Taif', 'Dammam', 'Riyadh'] ;
+P = ['Makkah', 'Riyadh'] ;
+false.
+
+105 ?- travel('Dammam', 'Madinah', P).
+P = ['Dammam', 'Qatif', 'Madinah'] .
+
+106 ?- travel('Riyadh', 'Makkah', P).
+P = ['Riyadh', 'Dammam', 'Qatif', 'Madinah', 'Makkah'] .
+
+107 ?- travel('Makkah', 'Riyadh', P).
+P = ['Makkah', 'Madinah', 'Taif', 'Dammam', 'Riyadh'] .
+
+108 ?- travel('Makkah', 'Madinah', P).
+P = ['Makkah', 'Madinah'] .
+
+109 ?- travel('Makkah', 'Riyadh', P).
+P = ['Makkah', 'Madinah', 'Taif', 'Dammam', 'Riyadh'] ;
+P = ['Makkah', 'Madinah', 'Tabuk', 'Taif', 'Dammam', 'Riyadh'] ;
+P = ['Makkah', 'Riyadh'] .
+
+110 ?- 
